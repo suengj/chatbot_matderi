@@ -20,7 +20,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v3
       with:
-        python-version: 3.11 # e.g., 3.8
+        python-version: 3.12 # e.g., 3.8
 
     # Step to install dependencies from your requirements file
     - name: Install dependencies
