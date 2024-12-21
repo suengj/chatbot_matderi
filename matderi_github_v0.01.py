@@ -1,11 +1,8 @@
 # 맛대리 v0.0.1
 # suengjae hong
 
-#pip install tabulate
-
-from dotenv import load_dotenv
-
 import os, json, time, requests
+# from dotenv import load_dotenv
 from datetime import datetime
 import pandas as pd
 import numpy as np # numpy==1.26.4
@@ -51,8 +48,9 @@ def transform_to_value_count(df, column_name):
 
 ### SETTING ###
 ## API ###
-load_dotenv()
-default_api_key = os.environ.get('OPENAI_API_KEY')
+# load_dotenv()
+# default_api_key = os.environ.get('OPENAI_API_KEY')
+default_api_key = os.getenv('OPENAI_API_KEY')
 
 ## Dataframe ###
 FILE_PATH = 'https://raw.githubusercontent.com/suengj/chatbot_matderi/refs/heads/main/yeoeuido_matzip.csv'
