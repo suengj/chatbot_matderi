@@ -50,7 +50,8 @@ def transform_to_value_count(df, column_name):
 ## API ###
 # load_dotenv()
 # default_api_key = os.environ.get('OPENAI_API_KEY')
-default_api_key = os.getenv('OPENAI_API_KEY')
+# default_api_key = os.getenv('OPENAI_API_KEY')
+default_api_key = st.secrets['OPENAI_API_KEY']
 
 ## Dataframe ###
 FILE_PATH = 'https://raw.githubusercontent.com/suengj/chatbot_matderi/refs/heads/main/yeoeuido_matzip.csv'
