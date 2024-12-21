@@ -1,0 +1,14 @@
+  name: Test
+  on:
+    push:
+      branches:
+        - main
+  jobs:
+    build:
+      runs-on: ubuntu-latest
+
+      steps:
+
+        - name: Access Secrets
+          run : |
+            echo "OPENAI_API_KEY : ${{secrets.OPENAI_API_KEY}}"
